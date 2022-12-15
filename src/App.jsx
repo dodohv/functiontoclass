@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import GoOut from './components/class/GoOut/GoOut'
 import Greetings from './components/class/Welcome/Greetings'
 import Header from './components/class/Welcome/Header'
+import Counter from './components/function/Count/Counter'
 //import GoOut from './components/function/GoOut/GoOut'
 //import Greetings from './components/function/Welcome/Greetings'
 //import Header from './components/function/Welcome/Header'
@@ -23,7 +24,7 @@ export default class App extends React.Component {
         <Header username="dodohv"/>
         <Greetings/>
         <GoOut/>
-        
+        <Counter/>
         
 
       </div>
