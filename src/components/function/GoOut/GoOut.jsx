@@ -4,6 +4,7 @@ const GoOut = () => {
     
         const toggleGoOut = () =>{
             setGoOut(prevState =>  {
+                console.log(prevState)
                 return prevState === "Sim" ? "Não" : "Sim"
             })
         }
