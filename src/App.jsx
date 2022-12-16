@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import GoOut from './components/class/GoOut/GoOut'
 import Greetings from './components/class/Welcome/Greetings'
 import Header from './components/class/Welcome/Header'
-import Counter from './components/function/Count/Counter'
+//import Counter from './components/function/Count/Counter'
 //import GoOut from './components/function/GoOut/GoOut'
 //import Greetings from './components/function/Welcome/Greetings'
 //import Header from './components/function/Welcome/Header'
-
+import Counter from './components/class/Count/Counter'
 
 
 //export default function App(props) {
@@ -25,6 +25,7 @@ export default class App extends React.Component {
         <Greetings/>
         <GoOut/>
         <Counter/>
+        
         
 
       </div>
