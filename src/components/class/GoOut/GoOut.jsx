@@ -14,23 +14,30 @@ export default class GoOut extends Component {
     state = {
         goOut: 'Yes' 
     }
-    
-     toggleGoOut = () => {
-        console.log(this.state.goOut)
-        
-        // this.setState(prevState => {
-        //     console.log(prevState)
-        //     return prevState === "Yes" ? "No" : "Yes"
-            
-        // })
-        this.setState( prevState  => {
-            console.log(prevState)
-            return prevState === "Yes" ? "No" : "Yes"
-            
+    toggleGoOut = () => {
+        this.setState(prevState => {
+            return {
+                goOut: prevState.goOut === "Yes" ? "No" : "Yes"
+            }
         })
-        //this.setState({goOut: "No"})
-
     }
+    //  toggleGoOut = () => {
+    //     console.log(this.state.goOut)
+        
+    //     // this.setState(prevState => {
+    //     //     console.log(prevState)
+    //     //     return prevState === "Yes" ? "No" : "Yes"
+            
+    //     // })
+    //     this.setState( prevState  => {
+    //         console.log(prevState)
+    //         return {
+    //            goOut: prevState === "Yes" ? "No" : "Yes"
+    //         }
+    //     })
+    //     //this.setState({goOut: "No"})
+
+    // }
     render() {
         return (
             <div className="state">
